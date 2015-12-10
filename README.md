@@ -28,18 +28,18 @@ When you build the app for the simulator or a device the build number will be in
 ![./img/img6.png](./img/img6.png)
 
 ##Using Version & Build Numbers in Code
-###Swift
-```
-self.lblVersion.text = String(format: "Version: %@", (NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as? String)!);
-
-self.lblBuild.text = String(format: "Build: %@", (NSBundle.mainBundle().infoDictionary?["CFBundleVersion"] as? String)!);
-```
 ###Objective-C
 
 ```
 self.lblVersion.text = [NSString stringWithFormat:@"Version: %@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
 
 self.lblBuild.text = [NSString stringWithFormat:@"Build: %@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]];
+```
+###Swift
+```
+self.lblVersion.text = String(format: "Version: %@", (NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as? String)!);
+
+self.lblBuild.text = String(format: "Build: %@", (NSBundle.mainBundle().infoDictionary?["CFBundleVersion"] as? String)!);
 ```
 ##License
 The MIT License (MIT)
