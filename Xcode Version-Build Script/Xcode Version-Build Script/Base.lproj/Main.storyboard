@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jEy-YX-Zsw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wYC-rj-xk1">
+            <objects>
+                <viewController id="jEy-YX-Zsw" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7fc-WX-gu8"/>
+                        <viewControllerLayoutGuide type="bottom" id="lqS-Xx-Zrf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dVZ-fq-OeE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSi-Ys-F9i" userLabel="lblVersion">
+                                <rect key="frame" x="20" y="28" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Build: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0R-Ia-oOZ" userLabel="lblBuild">
+                                <rect key="frame" x="20" y="57" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dXu-3w-THP">
+                                <rect key="frame" x="20" y="86" width="560" height="494"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">The MIT License (MIT)
+
+Copyright (c) 2015 Daniel J. Pinter
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NSi-Ys-F9i" firstAttribute="top" secondItem="7fc-WX-gu8" secondAttribute="bottom" constant="8" symbolic="YES" id="Gba-8W-mGa"/>
+                            <constraint firstItem="h0R-Ia-oOZ" firstAttribute="leading" secondItem="dXu-3w-THP" secondAttribute="leading" id="Ioy-rR-3W1"/>
+                            <constraint firstAttribute="bottom" secondItem="dXu-3w-THP" secondAttribute="bottom" constant="20" symbolic="YES" id="J9b-pB-ogn"/>
+                            <constraint firstItem="h0R-Ia-oOZ" firstAttribute="trailing" secondItem="NSi-Ys-F9i" secondAttribute="trailing" id="Ogx-SV-UEX"/>
+                            <constraint firstItem="h0R-Ia-oOZ" firstAttribute="trailing" secondItem="dXu-3w-THP" secondAttribute="trailing" id="XvF-OR-aJS"/>
+                            <constraint firstItem="h0R-Ia-oOZ" firstAttribute="leading" secondItem="NSi-Ys-F9i" secondAttribute="leading" id="eJs-8W-7pi"/>
+                            <constraint firstItem="h0R-Ia-oOZ" firstAttribute="trailing" secondItem="dVZ-fq-OeE" secondAttribute="trailingMargin" id="l5A-Zv-RTU"/>
+                            <constraint firstItem="dXu-3w-THP" firstAttribute="top" secondItem="h0R-Ia-oOZ" secondAttribute="bottom" constant="8" symbolic="YES" id="r0i-Ro-i4T"/>
+                            <constraint firstItem="NSi-Ys-F9i" firstAttribute="leading" secondItem="dVZ-fq-OeE" secondAttribute="leadingMargin" id="vFy-fb-6AZ"/>
+                            <constraint firstItem="h0R-Ia-oOZ" firstAttribute="top" secondItem="NSi-Ys-F9i" secondAttribute="bottom" constant="8" symbolic="YES" id="vkm-lu-YgK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblBuild" destination="h0R-Ia-oOZ" id="ETt-XW-Sgt"/>
+                        <outlet property="lblVersion" destination="NSi-Ys-F9i" id="ky0-uR-XW4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWr-Wk-a7i" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="136"/>
+        </scene>
+    </scenes>
+</document>
