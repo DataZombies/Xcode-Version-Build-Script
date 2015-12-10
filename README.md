@@ -28,8 +28,6 @@ When you build the app for the simulator or a device the build number will be in
 ![./img/img6.png](./img/img6.png)
 
 ##Using Version & Build Numbers in Code
-The Version and Build numbers can be accessed with this code:
-
 ###Swift
 ```
 self.lblVersion.text = String(format: "Version: %@", (NSBundle.mainBundle().infoDictionary?["CFBundleShortVersionString"] as? String)!);
