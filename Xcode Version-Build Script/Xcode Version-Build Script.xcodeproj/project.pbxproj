@@ -88,10 +88,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 659738261C19E4370063815C /* Build configuration list for PBXNativeTarget "Xcode Version-Build Script" */;
 			buildPhases = (
+				6597382B1C1A01A90063815C /* Xcode Version-Build Script */,
 				6597380B1C19E4370063815C /* Sources */,
 				6597380C1C19E4370063815C /* Frameworks */,
 				6597380D1C19E4370063815C /* Resources */,
-				6597382B1C1A01A90063815C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -148,13 +148,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6597382B1C1A01A90063815C /* ShellScript */ = {
+		6597382B1C1A01A90063815C /* Xcode Version-Build Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Xcode Version-Build Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
