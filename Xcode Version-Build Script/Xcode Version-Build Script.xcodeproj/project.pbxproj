@@ -13,7 +13,56 @@
 		6597381D1C19E4370063815C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6597381B1C19E4370063815C /* Main.storyboard */; };
 		6597381F1C19E4370063815C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6597381E1C19E4370063815C /* Assets.xcassets */; };
 		659738221C19E4370063815C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659738201C19E4370063815C /* LaunchScreen.storyboard */; };
+		65D0D2D21C935AA100F3DFC2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65D0D2D01C935AA100F3DFC2 /* Interface.storyboard */; };
+		65D0D2D41C935AA100F3DFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D0D2D31C935AA100F3DFC2 /* Assets.xcassets */; };
+		65D0D2DB1C935AA100F3DFC2 /* Xcode Version-Build Script Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 65D0D2DA1C935AA100F3DFC2 /* Xcode Version-Build Script Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		65D0D2E11C935AA100F3DFC2 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D0D2E01C935AA100F3DFC2 /* InterfaceController.m */; };
+		65D0D2E41C935AA100F3DFC2 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65D0D2E31C935AA100F3DFC2 /* ExtensionDelegate.m */; };
+		65D0D2E61C935AA100F3DFC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65D0D2E51C935AA100F3DFC2 /* Assets.xcassets */; };
+		65D0D2EB1C935AA100F3DFC2 /* Xcode Version-Build Script Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 65D0D2CE1C935AA100F3DFC2 /* Xcode Version-Build Script Watch.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65D0D2DC1C935AA100F3DFC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 659738071C19E4370063815C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65D0D2D91C935AA100F3DFC2;
+			remoteInfo = "Xcode Version-Build Script Watch Extension";
+		};
+		65D0D2E81C935AA100F3DFC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 659738071C19E4370063815C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65D0D2CD1C935AA100F3DFC2;
+			remoteInfo = "Xcode Version-Build Script Watch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65D0D2EA1C935AA100F3DFC2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				65D0D2EB1C935AA100F3DFC2 /* Xcode Version-Build Script Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D0D2F11C935AA100F3DFC2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				65D0D2DB1C935AA100F3DFC2 /* Xcode Version-Build Script Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6597380F1C19E4370063815C /* Xcode Version-Build Script.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xcode Version-Build Script.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,10 +76,28 @@
 		659738211C19E4370063815C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		659738231C19E4370063815C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6597382C1C1A06DC0063815C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		65D0D2CE1C935AA100F3DFC2 /* Xcode Version-Build Script Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Xcode Version-Build Script Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D0D2D11C935AA100F3DFC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		65D0D2D31C935AA100F3DFC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65D0D2D51C935AA100F3DFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65D0D2DA1C935AA100F3DFC2 /* Xcode Version-Build Script Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Xcode Version-Build Script Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D0D2DF1C935AA100F3DFC2 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		65D0D2E01C935AA100F3DFC2 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		65D0D2E21C935AA100F3DFC2 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		65D0D2E31C935AA100F3DFC2 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		65D0D2E51C935AA100F3DFC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65D0D2E71C935AA100F3DFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6597380C1C19E4370063815C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D0D2D71C935AA100F3DFC2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				659738111C19E4370063815C /* Xcode Version-Build Script */,
+				65D0D2CF1C935AA100F3DFC2 /* Xcode Version-Build Script Watch */,
+				65D0D2DE1C935AA100F3DFC2 /* Xcode Version-Build Script Watch Extension */,
 				659738101C19E4370063815C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				6597380F1C19E4370063815C /* Xcode Version-Build Script.app */,
+				65D0D2CE1C935AA100F3DFC2 /* Xcode Version-Build Script Watch.app */,
+				65D0D2DA1C935AA100F3DFC2 /* Xcode Version-Build Script Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +152,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		65D0D2CF1C935AA100F3DFC2 /* Xcode Version-Build Script Watch */ = {
+			isa = PBXGroup;
+			children = (
+				65D0D2D01C935AA100F3DFC2 /* Interface.storyboard */,
+				65D0D2D31C935AA100F3DFC2 /* Assets.xcassets */,
+				65D0D2D51C935AA100F3DFC2 /* Info.plist */,
+			);
+			path = "Xcode Version-Build Script Watch";
+			sourceTree = "<group>";
+		};
+		65D0D2DE1C935AA100F3DFC2 /* Xcode Version-Build Script Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				65D0D2DF1C935AA100F3DFC2 /* InterfaceController.h */,
+				65D0D2E01C935AA100F3DFC2 /* InterfaceController.m */,
+				65D0D2E21C935AA100F3DFC2 /* ExtensionDelegate.h */,
+				65D0D2E31C935AA100F3DFC2 /* ExtensionDelegate.m */,
+				65D0D2E51C935AA100F3DFC2 /* Assets.xcassets */,
+				65D0D2E71C935AA100F3DFC2 /* Info.plist */,
+			);
+			path = "Xcode Version-Build Script Watch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,19 +182,56 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 659738261C19E4370063815C /* Build configuration list for PBXNativeTarget "Xcode Version-Build Script" */;
 			buildPhases = (
-				6597382B1C1A01A90063815C /* Xcode Version-Build Script */,
 				6597380B1C19E4370063815C /* Sources */,
 				6597380C1C19E4370063815C /* Frameworks */,
 				6597380D1C19E4370063815C /* Resources */,
+				65D0D2EA1C935AA100F3DFC2 /* Embed Watch Content */,
+				65D0D2F41C935D5800F3DFC2 /* Xcode Version-Build Script - Post-Compile Phase */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				65D0D2E91C935AA100F3DFC2 /* PBXTargetDependency */,
 			);
 			name = "Xcode Version-Build Script";
 			productName = "Xcode Version-Build Script";
 			productReference = 6597380F1C19E4370063815C /* Xcode Version-Build Script.app */;
 			productType = "com.apple.product-type.application";
+		};
+		65D0D2CD1C935AA100F3DFC2 /* Xcode Version-Build Script Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D0D2F21C935AA100F3DFC2 /* Build configuration list for PBXNativeTarget "Xcode Version-Build Script Watch" */;
+			buildPhases = (
+				65D0D2CC1C935AA100F3DFC2 /* Resources */,
+				65D0D2F11C935AA100F3DFC2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65D0D2DD1C935AA100F3DFC2 /* PBXTargetDependency */,
+			);
+			name = "Xcode Version-Build Script Watch";
+			productName = "Xcode Version-Build Script Watch";
+			productReference = 65D0D2CE1C935AA100F3DFC2 /* Xcode Version-Build Script Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		65D0D2D91C935AA100F3DFC2 /* Xcode Version-Build Script Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65D0D2F01C935AA100F3DFC2 /* Build configuration list for PBXNativeTarget "Xcode Version-Build Script Watch Extension" */;
+			buildPhases = (
+				65D0D2F31C935D4F00F3DFC2 /* Xcode Version-Build Script - Precompile Phase */,
+				65D0D2D61C935AA100F3DFC2 /* Sources */,
+				65D0D2D71C935AA100F3DFC2 /* Frameworks */,
+				65D0D2D81C935AA100F3DFC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Xcode Version-Build Script Watch Extension";
+			productName = "Xcode Version-Build Script Watch Extension";
+			productReference = 65D0D2DA1C935AA100F3DFC2 /* Xcode Version-Build Script Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -113,6 +244,12 @@
 				TargetAttributes = {
 					6597380E1C19E4370063815C = {
 						CreatedOnToolsVersion = 7.2;
+					};
+					65D0D2CD1C935AA100F3DFC2 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					65D0D2D91C935AA100F3DFC2 = {
+						CreatedOnToolsVersion = 7.2.1;
 					};
 				};
 			};
@@ -130,6 +267,8 @@
 			projectRoot = "";
 			targets = (
 				6597380E1C19E4370063815C /* Xcode Version-Build Script */,
+				65D0D2CD1C935AA100F3DFC2 /* Xcode Version-Build Script Watch */,
+				65D0D2D91C935AA100F3DFC2 /* Xcode Version-Build Script Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -145,22 +284,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65D0D2CC1C935AA100F3DFC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D0D2D41C935AA100F3DFC2 /* Assets.xcassets in Resources */,
+				65D0D2D21C935AA100F3DFC2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65D0D2D81C935AA100F3DFC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D0D2E61C935AA100F3DFC2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6597382B1C1A01A90063815C /* Xcode Version-Build Script */ = {
+		65D0D2F31C935D4F00F3DFC2 /* Xcode Version-Build Script - Precompile Phase */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Xcode Version-Build Script";
+			name = "Xcode Version-Build Script - Precompile Phase";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#Xcode Version-Build Script\n#v1.0 (1)\n#2015-12-10\n#The MIT License (MIT)\n\n#Copyright (c) 2015 Daniel J. Pinter\n\n#Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\n#The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\n#THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nconf=${CONFIGURATION}\narch=${ARCHS:0:4}\nbuildPlist=${INFOPLIST_FILE}\necho \"${INFOPLIST_FILE}\"\n\n# Only increase the build number on Device and AdHoc/AppStore build\nif [ $conf == \"Release\" ]\nthen\n\necho \"Increment version number.\"\nbundleShortVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"$buildPlist\" | /usr/bin/perl -pe 's/(\\d+\\.)(\\d+)/$1.($2+1)/eg'`\necho $bundleShortVersion;\n/usr/libexec/PListBuddy -c \"Set :CFBundleShortVersionString $bundleShortVersion\" \"$buildPlist\"\n\necho \"Reset build number to 0.\"\nbundleVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\" | /usr/bin/perl -pe 's/(\\d+)/($1-$1)/eg'`\necho $bundleVersion;\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"$buildPlist\"\n\nelse\n\necho \"Increment build number.\"\nbundleVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$buildPlist\" | /usr/bin/perl -pe 's/(\\d+)/($1+1)/eg'`\necho $bundleVersion;\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"$buildPlist\"\n\nfi";
+			shellScript = "#Xcode Version-Build Script - Precompile Phase\n#v2.0.0 (1)\n#2016-03-10\n#The MIT License (MIT)\n\n#Copyright (c) 2015 Daniel J. Pinter\n\n#Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\n#The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\n#THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\necho \"=============================================\"\necho \"Xcode Version-Build Script - Precompile Phase\"\n\nuseGitCommitCount=$\"YES\" # \"YES\"|\"NO\"\n\necho \"Project root: ${SRCROOT}\"\necho \"Info.plist: ${INFOPLIST_FILE}\"\necho \"useGitCommitCount: $useGitCommitCount\"\necho .\necho \"Save useGitCommitCount to project root infoPlistFile\"\n/usr/libexec/PListBuddy -c \"Add :useGitCommitCount string $useGitCommitCount\" \"${SRCROOT}/rootInfo.plist\"\necho .\n\n# Use this repository's git commit count for the CFBundleVersion\nif [ $useGitCommitCount == \"YES\" ]; then\n\nbundleVersion=$(git rev-list HEAD | wc -l | tr -d ' ')\necho \"Using git commit count for CFBundleVersion: $bundleVersion\"\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"${INFOPLIST_FILE}\"\n\nelse\n\n# Increment the value in bundleVersion for the CFBundleVersion\nbundleVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_FILE}\" | /usr/bin/perl -pe 's/(\\d+)/($1+1)/eg'`\necho \"Increment CFBundleVersion to $bundleVersion\"\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"${INFOPLIST_FILE}\"\n\nfi\n\necho .\necho \"Sync all Info.plist files in the project\"\n\nbundleShortVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${INFOPLIST_FILE}\")\nbundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_FILE}\")\n\nfind \"${SRCROOT}\" -name 'Info.plist' | while read productInfoPlistFile; do\necho \"$productInfoPlistFile $bundleShortVersion ($bundleVersion)\"\n/usr/libexec/PListBuddy -c \"Set :CFBundleShortVersionString $bundleShortVersion\" \"$productInfoPlistFile\"\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"$productInfoPlistFile\"\ndone\necho \"=============================================\"";
+		};
+		65D0D2F41C935D5800F3DFC2 /* Xcode Version-Build Script - Post-Compile Phase */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Xcode Version-Build Script - Post-Compile Phase";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#Xcode Version-Build Script - Post-Compile Phase\n#v2.0.0 (1)\n#2016-03-10\n#The MIT License (MIT)\n\n#Copyright (c) 2015 Daniel J. Pinter\n\n#Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\n#The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\n#THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\necho \"=============================================\"\necho \"Xcode Version-Build Script - Post-Compile Phase\"\n\nuseGitCommitCount=$(/usr/libexec/PlistBuddy -c \"Print useGitCommitCount\" \"${SRCROOT}/rootInfo.plist\")\n\necho \"Project root: ${SRCROOT}\"\necho \"Info.plist: ${INFOPLIST_FILE}\"\necho \"Configuration: ${CONFIGURATION}\"\necho \"useGitCommitCount: $useGitCommitCount\"\necho .\n\n# Only increase the build number on release configuration\nif [ ${CONFIGURATION} == \"Release\" ]; then\n\nbundleShortVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${INFOPLIST_FILE}\"`\nnumberOfOccurrences=$(grep -o \"\\.\" <<< \"$bundleShortVersion\" | wc -l)\n\nif [ $numberOfOccurrences == \"1\" ]; then\n\nbundleShortVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${INFOPLIST_FILE}\" | /usr/bin/perl -pe 's/(\\d+\\.)(\\d+)/$1.($2+1)/eg'`\n\nelse\n\nbundleShortVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${INFOPLIST_FILE}\" | /usr/bin/perl -pe 's/(\\d+\\.)(\\d+\\.)(\\d+)/$1.$2.($3+1)/eg'`\n\nfi\n\necho \"Increment version number to $bundleShortVersion\"\necho .\n/usr/libexec/PListBuddy -c \"Set :CFBundleShortVersionString $bundleShortVersion\" \"${INFOPLIST_FILE}\"\n\n#Reset CFBundleVersion if NOT using git commit count\nif [ $useGitCommitCount == \"NO\" ]; then\n\nbundleVersion=`/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_FILE}\" | /usr/bin/perl -pe 's/(\\d+)/($1-$1)/eg'`\necho \"Reset build number to $bundleVersion\"\necho .\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"${INFOPLIST_FILE}\"\n\nfi\n\nfi\n\necho \"Sync all Info.plist files in the project\"\n\nbundleShortVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" \"${INFOPLIST_FILE}\")\nbundleVersion=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${INFOPLIST_FILE}\")\n\nfind \"${SRCROOT}\" -name 'Info.plist' | while read productInfoPlistFile; do\necho \"$productInfoPlistFile $bundleShortVersion ($bundleVersion)\"\n/usr/libexec/PListBuddy -c \"Set :CFBundleShortVersionString $bundleShortVersion\" \"$productInfoPlistFile\"\n/usr/libexec/PListBuddy -c \"Set :CFBundleVersion $bundleVersion\" \"$productInfoPlistFile\"\ndone\n\necho .\necho \"Reomve useGitCommitCount in rootInfo.plist and delete the file\"\n/usr/libexec/PListBuddy -c \"Delete :useGitCommitCount\" \"${SRCROOT}/rootInfo.plist\"\nrm \"${SRCROOT}/rootInfo.plist\"\necho \"=============================================\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -175,7 +345,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65D0D2D61C935AA100F3DFC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65D0D2E41C935AA100F3DFC2 /* ExtensionDelegate.m in Sources */,
+				65D0D2E11C935AA100F3DFC2 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65D0D2DD1C935AA100F3DFC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65D0D2D91C935AA100F3DFC2 /* Xcode Version-Build Script Watch Extension */;
+			targetProxy = 65D0D2DC1C935AA100F3DFC2 /* PBXContainerItemProxy */;
+		};
+		65D0D2E91C935AA100F3DFC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65D0D2CD1C935AA100F3DFC2 /* Xcode Version-Build Script Watch */;
+			targetProxy = 65D0D2E81C935AA100F3DFC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6597381B1C19E4370063815C /* Main.storyboard */ = {
@@ -192,6 +384,14 @@
 				659738211C19E4370063815C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		65D0D2D01C935AA100F3DFC2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65D0D2D11C935AA100F3DFC2 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -306,6 +506,68 @@
 			};
 			name = Release;
 		};
+		65D0D2EC1C935AA100F3DFC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = Xcode_Version_Build_Script_Watch_Extension;
+				INFOPLIST_FILE = "Xcode Version-Build Script Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Xcode-Version-Build-Script.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		65D0D2ED1C935AA100F3DFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = Xcode_Version_Build_Script_Watch_Extension;
+				INFOPLIST_FILE = "Xcode Version-Build Script Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "Xcode-Version-Build-Script.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		65D0D2EE1C935AA100F3DFC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Xcode Version-Build Script Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Xcode-Version-Build-Script.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		65D0D2EF1C935AA100F3DFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Xcode Version-Build Script Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Xcode-Version-Build-Script.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +585,24 @@
 			buildConfigurations = (
 				659738271C19E4370063815C /* Debug */,
 				659738281C19E4370063815C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D0D2F01C935AA100F3DFC2 /* Build configuration list for PBXNativeTarget "Xcode Version-Build Script Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D0D2EE1C935AA100F3DFC2 /* Debug */,
+				65D0D2EF1C935AA100F3DFC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65D0D2F21C935AA100F3DFC2 /* Build configuration list for PBXNativeTarget "Xcode Version-Build Script Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65D0D2EC1C935AA100F3DFC2 /* Debug */,
+				65D0D2ED1C935AA100F3DFC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
